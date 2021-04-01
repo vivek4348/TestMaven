@@ -7,42 +7,49 @@
 	<artifactId>TestMaven</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>TestMaven</name>
-	
+
 	<properties>
 		<!-- remove following when web.xml is added! -->
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 
-		
+
 
 	</properties>
 
 	<dependencies>
 		<dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-web</artifactId>
-    <version>2.11.1</version>
-</dependency>		
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-web</artifactId>
+			<version>2.11.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.0.0</version>
+		</dependency>
+
 	</dependencies>
 	<build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-            </plugin>
-            <plugin>
-			  <groupId>org.apache.maven.plugins</groupId>
-			  <artifactId>maven-compiler-plugin</artifactId>
-			  <configuration>
-			    <source>11</source>
-			    <target>11</target>
-			  </configuration>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
 			</plugin>
-        </plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
 
-    </build>
-	
+	</build>
+
 </project>
